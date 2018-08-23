@@ -1,0 +1,38 @@
+﻿<Window x:Class="CarSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarSimulator"
+        mc:Ignorable="d"
+         Title="CarSimulator Window" Height="600" Width="950" Background="DimGray" >
+
+    <Grid Margin="0,0,2,0" Height="567" VerticalAlignment="Top">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="277*"/>
+            <ColumnDefinition Width="265*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="car1" Source="images\Car1.PNG" Height="170" Margin="87,164,173,0" VerticalAlignment="Top"/>
+        <Image x:Name="car2" Source="images\Car2.PNG" HorizontalAlignment="Left" Height="170" Margin="386,164,0,0" VerticalAlignment="Top" Width="221" Grid.ColumnSpan="2"/>
+        <Image x:Name="car3" Source="images\Car3.PNG" HorizontalAlignment="Left" Height="170" Margin="188,164,0,0" VerticalAlignment="Top" Width="222" Grid.Column="1"/>
+        <Button  FontFamily="arial" FontSize="13" FontWeight="ExtraBold" x:Name="buttStartCar1"   HorizontalAlignment="Left" Margin="139,380,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="2.849,0.611" Click="buttStartCar1_Click">
+            <TextBlock Text="      Start" Margin="0,-3,0,0"/>
+        </Button>
+        <Button FontFamily="arial" FontSize="13" FontWeight="ExtraBold" x:Name="buttPauseCar1" Content="     Pause" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="139,436,0,0" VerticalAlignment="Top" Width="109" Click="buttPauseCar1_Click"/>
+        <Button FontFamily="arial" FontSize="13" FontWeight="ExtraBold" x:Name="buttStartCar2" Content="     Start" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="428,380,0,0" VerticalAlignment="Top" Width="109" Grid.ColumnSpan="2" Click="buttStartCar2_Click"/>
+        <Button FontFamily="arial" FontSize="13" FontWeight="ExtraBold" x:Name="buttPauseCar2" Grid.ColumnSpan="2" Content="     Pause" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="428,436,0,0" VerticalAlignment="Top" Width="109" Click="buttPauseCar2_Click"/>
+        <Button FontFamily="arial" FontSize="13" FontWeight="ExtraBold" x:Name="buttStartCar3" Content="     Start" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="234,380,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-3.599,0.319" Grid.Column="1" Click="buttStartCar3_Click"/>
+        <Button FontFamily="arial" FontSize="13" FontWeight="ExtraBold" x:Name="buttPauseCar3" Content="     Pause" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="234,436,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="0.06,0.75" Grid.Column="1" Click="buttPauseCar3_Click"/>
+        <Label x:Name="label" Foreground="WhiteSmoke" FontFamily="arial" FontSize="20" FontWeight="ExtraBold" Content="Truck" HorizontalAlignment="Left" Margin="158,126,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Foreground="WhiteSmoke" FontFamily="arial" FontSize="20" FontWeight="ExtraBold" Content="Van" HorizontalAlignment="Left" Margin="443,126,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy1" Foreground="WhiteSmoke" FontFamily="arial" FontSize="20" FontWeight="ExtraBold" Content="Car" HorizontalAlignment="Left" Margin="248,126,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="392" Margin="72,108,0,0" VerticalAlignment="Top" Width="818" RenderTransformOrigin="-2.12,0.095" Grid.ColumnSpan="2"/>
+        <Label x:Name="label1" Background="White" FontFamily="arial" FontSize="22" FontWeight="ExtraBold" Content="Car Simulator" HorizontalAlignment="Left" Margin="386,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.013,0.231" Grid.ColumnSpan="2"/>
+        <Border  BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" Height="35" Margin="386,52,0,0" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2"/>
+
+
+
+
+    </Grid>
+</Window>
