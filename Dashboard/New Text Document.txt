@@ -1,0 +1,2 @@
+https://www.cssscript.com/animated-circular-progress-bar-using-svg-path-animation/
+https://www.cssscript.com/minimal-horizontal-circular-progress-bar-library-progressbar-js/

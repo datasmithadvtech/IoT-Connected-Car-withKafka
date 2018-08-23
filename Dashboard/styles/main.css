@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hidden {
+    display: none;
+}
+
+.alt-text {
+    display: none;
+}
+@font-face {
+    font-family: connected_car;
+    src: url('../fonts/connected_car.ttf');
+}
+
+.navbar-default {
+    border: none;
+    background: #5296cf;
+}
+
+@media (min-width: 768px) {
+    .container-fluid > .navbar-collapse,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container > .navbar-header {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+.navbar-default .navbar-nav > li {
+    transition: all .2s ease-in;
+    margin-left: 1%;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > li:hover a {
+    color: #0F786E;
+}
+
+.navbar-default .navbar-nav > li:hover {
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+        margin-top: 0px;
+        padding-left: 240px;
+        width: 80%;
+    }
+}
+
+
+.pivotal-logo {
+    width: 175px;
+    height: 50px;
+    float: left;
+
+}
+ul.panel-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li.panel-link {
+    position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    height: 100%;
+    border-left: 2px solid #2A2B2D;
+    color: #F1F1F1;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #333;
+    }
+
+    &.current-link {
+        background-color: #2A2B2D;
+    }
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translatey(-50%);
+        width: 100%;
+        text-align: center;
+        font-family: connected_car;
+    }
+
+    &#status-link {
+        &:after {
+            content: "\e600";
+            font-size: 25px;
+        }
+    }
+
+    &#journey-link {
+        &:after {
+            content: "\e601";
+            font-size: 32px;
+        }
+    }
+}
+.control-panel {
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    
+    width: 200px;
+    overflow-y: scroll;
+    border-left: 2px solid #DDDDDD;
+    background: $white;
+    
+    
+    
+    text-align: center;
+
+
+}
+.control-panel-title {
+    border-bottom: 2px solid #DDDDDD;
+    background-color: #E2E2E2;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-family: inherit;
+}
+svg path {
+    will-change: auto;
+    stroke-width: 10px;
+    stroke-miterlimit: round;
+    transition: stroke-dashoffset 850ms ease-in-out;
+    
+    
+    
+}
+
+svg text {
+    color: #585858;
+    padding-top: 15px;
+    text-align: center;
+    
+}
+svg {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-63%) !important;
+    align-items: center;
+    
+    
+    font-family: cursive;
+}
+.radial-meter,
+.fill-meter {
+    position: relative;
+    display: block;
+    width: 100%;
+    /* padding: 0px 0 0px;*/
+    border-bottom: 2px solid #DDDDDD;
+    
+   
+    
+
+
+}
+.main-map {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 200px;
+}
+#_carImage{
+     position: absolute;
+    z-index: 1;
+    top: 50px;
+    bottom: 400px;
+    left: 550px;
+    right: 500px;
+    opacity: 0.9;
+
+}
+   img {
+    border-radius: 8%;
+}
+	
+
+/*========= nav styles =========*/
+
+.my-active {
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.my-active a{
+    color: #0F786E !important;
+}
