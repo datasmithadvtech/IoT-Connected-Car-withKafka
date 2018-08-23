@@ -1,0 +1,57 @@
+=====================================
+#####################################
+=====================================
+
+1- start kafka 
+###
+prerequisite step
+before starting kafka ensure that zookeeper are up & running  
+(
+in new terminal
+cd ~/zookeeper-3.4.12/bin
+then excecute command: bash zkServer.sh start
+)
+###
+in new terminal
+-cd ~/kafka_2.12-1.1.1
+-then excecute command: bin/kafka-server-start.sh  config/server.properties
+
+------------
+
+2- start Car Simulator
+
+------------
+
+3-run Enrichment Transformer
+in new terminal
+-cd ~/IoT_Connected_Car/Run
+-then excecute command: java -jar EnrichmentTransformer.jar
+
+------------
+
+4-run Gemfire Transformer & API
+in new new terminal
+-cd ~/IoT_Connected_Car/Run
+-then excecute command: java -jar GemfireTransformer-API.jar
+
+------------
+
+5- run IoT Data Store 
+###
+prerequisite step
+before running IoT Data Store ensure that all Hadoop daemons are up & running  
+(
+in new new terminal
+-cd $HADOOP_HOME
+-then excecute command: sbin/start-all.sh
+)
+###
+in new new terminal
+-cd ~/IoT_Connected_Car/Run
+-then excecute command: java -jar IoTDataStore.jar 
+
+-------------
+ 
+6- start Dashboard
+-open dashboard.html 
+
