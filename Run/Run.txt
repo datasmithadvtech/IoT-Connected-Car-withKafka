@@ -1,6 +1,9 @@
 =====================================
 #####################################
 =====================================
+Watch Video : https://drive.google.com/open?id=1PZYrjYwtKTz4AMTVhbAforF4YI9TAR2y
+
+or
 
 1- start kafka 
 ###
